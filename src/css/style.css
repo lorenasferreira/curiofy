@@ -1,0 +1,102 @@
+:root {
+  /* Primary brand colors */
+  --mystic-purple: #5A48A8;
+  --lavender-light: #C7B7FF;
+
+  /* Accent magical tones */
+  --star-gold: #F5D76E;
+  --cosmic-rose: #E09EFF;
+
+  /* Neutrals */
+  --void-black: #0F0F0F;
+  --soft-white: #F7F5FF;
+
+  /* Shadows / subtle glows (optional) */
+  --glow-purple: rgba(90, 72, 168, 0.4);
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  padding: 1.2rem;
+  background: #fafafa;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.logo-link {
+  display: inline-flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 48px;
+  width: auto;
+  cursor: pointer;
+}
+
+
+.fact-section,
+.favorites-section {
+  margin-bottom: 2rem;
+}
+
+.fact-text {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.fact-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+button {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.favorites-section {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: var(--soft-white);
+  border-radius: 12px;
+}
+
+.favorites-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.favorites-list li {
+  background: var(--lavender-light);
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  color: var(--void-black);
+  font-size: 0.95rem;
+}
+
+
+/* DESKTOP / TABLET */
+@media (min-width: 768px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* fact left, favorites right */
+    gap: 2rem;
+  }
+
+  .fact-buttons {
+    flex-direction: row;
+  }
+}
