@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CurioFy App</title>
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="icon" type="image/png" href="./favicon.png" />
+  </head>
+  <body>
+    <header>
+        <a href="./index.html" id="logo-link" class="logo-link">
+            <img src="./src/img/logo.png" alt="CurioFy logo" class="logo-img">
+        </a>
+      <h1>CurioFy App</h1>
+    </header>
+    <main>
+      <section id="current-fact" class="fact-section">
+        <h2 class="section-title">Fact of the moment</h2>
+        <p id="fact-text" class="fact-text">Tap to discover something cool!</p>
+        <div class="fact-buttons">
+          <button id="btn-new" class="btn-primary">New fact</button>
+          <button id="btn-fav" class="btn-secondary" disabled>
+            Add to favorites
+          </button>
+        </div>
+      </section>
+      <section id="favorites-section" class="favorites-section">
+        <h2 class="section-title">Your Favorites</h2>
+
+        <ul id="favorites-list" class="favorites-list"></ul>
+      </section>
+    </main>
+  </body>
+</html>
