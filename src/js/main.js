@@ -1,5 +1,6 @@
 import { getRandomFact } from "./api.js";
 import { renderFavorites } from "./ui.js";
+export { addFavorite };
 
 const factText = document.getElementById("fact-text");
 const newFactBtn = document.getElementById("btn-new");
@@ -21,16 +22,14 @@ async function loadFact() {
   }
 }
 
-function addFavorite() {
-  if (!currentFact) return;
-  if (favorites.includes(currentFact)) {
-    return;
-  }
-  favorites.push(currentFact);
+import { addFavorite as addFavoritePure } from "./favorites.js";
+function addFavoriteDOM() {
+  const newList = addFavoritePure(favorites, currentFact);
+  favorites = newList;
   renderFavorites(favorites, favoritesList);
 }
 
 newFactBtn.addEventListener("click", loadFact);
-btnFav.addEventListener("click", addFavorite);
+btnFav.addEventListener("click", addFavoriteDOM);
 
 renderFavorites(favorites, favoritesList);
