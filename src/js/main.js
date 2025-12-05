@@ -1,6 +1,5 @@
 import { getRandomFact } from "./api.js";
 import { renderFavorites } from "./ui.js";
-export { addFavorite };
 
 const factText = document.getElementById("fact-text");
 const newFactBtn = document.getElementById("btn-new");
