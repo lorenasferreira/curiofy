@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CurioFy App</title>
+
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="icon" type="image/png" href="./favicon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="./index.html" id="logo-link" class="logo-link">
+        <img src="./src/img/logo.png" alt="CurioFy logo" class="logo-img" />
+      </a>
+    </header>
+
+    <main class="layout">
+      <section id="current-fact" class="fact-section">
+        <h2 class="section-title">The Curio Drop</h2>
+
+        <div class="fact-container">
+          <p id="fact-text" class="fact-text">Tap ‘New Fact’ to start</p>
+        </div>
+
+        <div class="fact-buttons">
+          <button id="btn-new" class="btn-primary">New fact</button>
+          <button id="btn-fav" class="btn-secondary" disabled>
+            Add to favorites
+          </button>
+        </div>
+      </section>
+      <section id="favorites-section" class="favorites-section">
+        <h2>Your Favorites</h2>
+        <ul id="favorites-list" class="favorites-list"></ul>
+      </section>
+    </main>
+    <footer class="footer">
+      <h1 class="footer-title">CurioFy App</h1>
+      <p>© 2025 CurioFy — All rights reserved.</p>
+    </footer>
+
+    <script type="module" src="./src/js/main.js"></script>
+  </body>
+</html>
