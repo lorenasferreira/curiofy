@@ -1,0 +1,26 @@
+{
+  "name": "curiofy",
+  "version": "1.0.0",
+  "description": "Random curiosity generator web app",
+  "homepage": "https://github.com/lorenasferreira/curiofy#readme",
+  "bugs": {
+    "url": "https://github.com/lorenasferreira/curiofy/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lorenasferreira/curiofy.git"
+  },
+  "license": "ISC",
+  "author": "Lorena Ferreira",
+  "type": "commonjs",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "vitest": "^4.0.15"
+  }
+}
