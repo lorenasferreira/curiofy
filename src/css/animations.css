@@ -1,0 +1,42 @@
+.fact-container:hover {
+  transform: scale(1.02);
+}
+
+.remove-btn:hover {
+  color: var(--mystic-purple);
+}
+
+#btn-new:hover {
+  background: #6a58c9;
+  box-shadow: 0 0 12px var(--glow-purple);
+}
+
+#btn-fav:hover {
+  background: #ffe27c;
+  box-shadow: 0 0 12px rgba(245, 215, 110, 0.6);
+}
+
+#btn-fav:disabled {
+  background: var(--star-gold);
+  color: #777;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+#btn-fav:disabled:hover {
+  background: #d1d1d1;
+  color: #777;
+  box-shadow: none;
+}
+
+.fact-text.show {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1) rotate(0deg);
+}
+
+
+.fact-text.show {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1) rotate(0deg);
+}
