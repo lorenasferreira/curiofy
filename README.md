@@ -146,5 +146,6 @@ Currently focused on learning and portfolio, but can be evolved into a full prod
 
 ## 👩‍💻 Author
 
-Lorena Ferreira
-GitHub: [https://github.com/lorenasferreira](https://github.com/lorenasferreira)
+Lorena Ferreira<br>
+Full stack developer focused on building interactive and user-centered web experiences.<br>
+This project was fully designed and developed independently.
