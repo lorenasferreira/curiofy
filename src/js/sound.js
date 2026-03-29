@@ -1,4 +1,4 @@
-const newFactSound = new Audio("../src/sounds/mystic-bell.mp3");
+const newFactSound = new Audio("./../src/sounds/mystic-bell.mp3");
 const favoriteSound = new Audio("../src/sounds/soft-pop.mp3");
 const loadingSound = new Audio("../src/sounds/ambient-magic.mp3");
 
@@ -7,7 +7,6 @@ favoriteSound.volume = 0.25;
 loadingSound.volume = 0.2;
 loadingSound.loop = true;
 
-// estado global
 let soundEnabled = JSON.parse(localStorage.getItem("soundEnabled")) ?? true;
 
 function safePlay(sound) {
