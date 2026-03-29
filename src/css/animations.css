@@ -52,6 +52,11 @@
   animation: pulseMystic 1.4s ease-in-out infinite;
 }
 
+.sound-btn:hover {
+  background: var(--mystic-purple);
+  box-shadow: 0 0 10px var(--glow-purple);
+}
+
 @keyframes pulseMystic {
   0% {
     opacity: 0.45;
