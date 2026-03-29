@@ -1,4 +1,4 @@
-export function renderFavorites(favoritesArray, listElement) {
+export function renderFavorites(favoritesArray, listElement, onRemoveFavorite) {
   listElement.innerHTML = "";
 
   if (favoritesArray.length === 0) {
@@ -18,12 +18,36 @@ export function renderFavorites(favoritesArray, listElement) {
     removeBtn.textContent = "✖";
     removeBtn.classList.add("remove-btn");
     removeBtn.addEventListener("click", () => {
-      favoritesArray.splice(index, 1);
-      renderFavorites(favoritesArray, listElement);
+      onRemoveFavorite(index);
     });
 
     li.appendChild(text);
     li.appendChild(removeBtn);
     listElement.appendChild(li);
   });
+}
+
+export function showFactStatus(statusElement, message) {
+  statusElement.textContent = message;
+  statusElement.classList.add("active");
+}
+
+export function clearFactStatus(statusElement) {
+  statusElement.textContent = "";
+  statusElement.classList.remove("active");
+}
+
+export function hideFactText(factElement) {
+  factElement.classList.remove("show");
+  factElement.classList.add("hidden");
+}
+
+export function revealFactText(factElement, text) {
+  factElement.textContent = text;
+  factElement.classList.remove("hidden");
+  factElement.classList.add("show");
+}
+
+export function setButtonDisabled(buttonElement, isDisabled) {
+  buttonElement.disabled = isDisabled;
 }

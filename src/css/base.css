@@ -1,0 +1,57 @@
+:root {
+  --mystic-purple: #5a48a8;
+  --purple-hover: #6a58c9;
+  --lavender-light: #c7b7ff;
+  --star-gold: #f5d76e;
+  --gold-hover: #ffe27c;
+  --gold-shadow: rgba(245, 215, 110, 0.6);
+  --red: #f62323;
+  --void-black: #0f0f0f;
+  --soft-white: #f7f5ff;
+  --bg-gradient-1: #ede5ff;
+  --bg-gradient-2: #d6c7ff;
+  --glow-purple: rgba(90, 72, 168, 0.4);
+}
+
+body {
+  margin: 0;
+  padding: 1.2rem;
+  min-height: 100vh;
+  background: linear-gradient(
+    180deg,
+    var(--soft-white),
+    var(--bg-gradient-1),
+    #d6c7ff
+  );
+}
+
+button {
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  transition: all 0.25s ease;
+}
+
+h2 {
+  text-align: center;
+}
+
+.sound-control {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 20px;
+}
+
+.sound-btn {
+  background: transparent;
+  border: 1px solid var(--lavender-light);
+  color: var(--soft-white);
+  font-size: 1.2rem;
+  padding: 8px 12px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
