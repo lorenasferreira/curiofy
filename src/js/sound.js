@@ -1,6 +1,6 @@
-const newFactSound = new Audio("./../src/sounds/mystic-bell.mp3");
-const favoriteSound = new Audio("../src/sounds/soft-pop.mp3");
-const loadingSound = new Audio("../src/sounds/ambient-magic.mp3");
+const newFactSound = new Audio("./src/sounds/mystic-bell.mp3");
+const favoriteSound = new Audio("./src/sounds/soft-pop.mp3");
+const loadingSound = new Audio("./src/sounds/ambient-magic.mp3");
 
 newFactSound.volume = 0.35;
 favoriteSound.volume = 0.25;
