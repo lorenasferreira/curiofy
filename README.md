@@ -5,6 +5,7 @@ Curiofy is an interactive web app that delivers random facts in a playful and en
 ---
 
 ## 📚 Table of Contents
+
 - 💡 Project Overview
 - 🖼 Screenshots
 - 🛠 Tech Stack
@@ -23,6 +24,7 @@ Curiofy is an interactive web app that delivers random facts in a playful and en
 Curiofy is a front-end application built with vanilla JavaScript that consumes a public API to display random facts.
 
 The goal of this project is not only functionality, but also **user experience**, focusing on:
+
 - Clean UI
 - Interactive elements
 - Smooth user feedback
@@ -37,8 +39,12 @@ https://lorenasferreira.github.io/curiofy/index.html
 
 ## 🖼 Screenshots
 
-![Home Screen](./assets/screenshot-home.png)
-![Favorites](./assets/screenshot-favorites.png)
+### 📱 App experience
+
+<div align="center">
+  <img src="./docs/screenshots/home.png" alt="Home screen" width="30%" />
+  <img src="./docs/screenshots/favorites.png" alt="Favorites screen" width="30%" />
+</div>
 
 ---
 
@@ -62,9 +68,10 @@ api.js        → handles API requests
 ui.js         → handles DOM rendering
 main.js       → app logic and event handling
 
-````
+```
 
 Key concepts used:
+
 - Separation of concerns
 - Reusable functions
 - State handling (favorites)
@@ -89,7 +96,7 @@ Clone the repository:
 
 ```bash
 git clone https://github.com/lorenasferreira/curiofy.git
-````
+```
 
 Navigate into the project:
 
@@ -101,7 +108,7 @@ Run the project:
 
 Option 1:
 
-* Open `index.html` in your browser
+- Open `index.html` in your browser
 
 Option 2 (recommended):
 
@@ -113,21 +120,20 @@ npx live-server
 
 ## 🔎 Code Review Notes
 
-* The project is built using **vanilla JavaScript**, without frameworks, to reinforce core concepts
-* Functions are modular and focused on single responsibilities
-* UI updates are handled dynamically via DOM manipulation
-* Basic state management is implemented for favorites
+- The project is built using **vanilla JavaScript**, without frameworks, to reinforce core concepts
+- Functions are modular and focused on single responsibilities
+- UI updates are handled dynamically via DOM manipulation
+- Basic state management is implemented for favorites
 
 ---
 
 ## 🚀 Future Improvements
 
-* Persist favorites using `localStorage`
-* Add categories and filtering system
-* Improve animations (e.g. “crystal ball” reveal effect 🔮)
-* Add loading states and UX feedback
-* Implement share functionality
-* Deploy improved version with custom domain
+- Persist favorites using `localStorage`
+- Add categories and filtering system
+- Add loading states and UX feedback
+- Implement share functionality
+- Deploy improved version with custom domain
 
 ---
 
