@@ -33,29 +33,46 @@
         <p class="subtitle">Where curiosity meets magic ✨</p>
 
         <div class="sound-control">
-          <button id="btn-sound" class="sound-btn">🔊</button>
+          <button id="btn-sound" class="sound-btn" type="button">🔊</button>
         </div>
 
-        <div class="fact-container">
-          <p id="fact-status" class="fact-status"></p>
-          <p id="fact-text" class="fact-text">Tap ‘New Fact’ to start</p>
-        </div>
+        <div class="oracle-card">
+          <div class="crystal-wrapper">
+            <img
+              id="crystal-ball"
+              class="crystal-svg"
+              src="./src/img/curiofy-crystal-logo.svg"
+              alt="Crystal ball"
+            />
+          </div>
 
-        <div class="fact-buttons">
-          <button id="btn-new" class="btn-primary">New fact</button>
-          <button id="btn-fav" class="btn-secondary" disabled>
-            Add to favorites
-          </button>
+          <div class="fact-container">
+            <p id="fact-status" class="fact-status"></p>
+            <p id="fact-text" class="fact-text">
+              Tap “Reveal fact” to uncover something curious.
+            </p>
+          </div>
+
+          <div class="fact-buttons">
+            <button id="btn-new" class="btn-primary" type="button">
+              Reveal fact
+            </button>
+            <button id="btn-fav" class="btn-secondary" type="button" disabled>
+              Add to favorites
+            </button>
+          </div>
         </div>
       </section>
+
       <section id="favorites-section" class="favorites-section">
         <h2>Your Favorites</h2>
         <ul id="favorites-list" class="favorites-list"></ul>
       </section>
     </main>
+
     <footer class="footer">
       <h1 class="footer-title">CurioFy App</h1>
-      <p>© 2025 CurioFy — All rights reserved.</p>
+      <p>© 2026 CurioFy — All rights reserved.</p>
     </footer>
 
     <script type="module" src="./src/js/main.js"></script>
